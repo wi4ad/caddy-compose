@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  caddy:
+    image: caddy:2.7.5-alpine
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    network_mode: host
+    volumes:
+      - ${CADDY_FILE}:/etc/caddy/Caddyfile
+      - ${CADDY_DATA}:/data
+      - ${CADDY_CONFIG}:/config
