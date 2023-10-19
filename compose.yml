@@ -2,8 +2,8 @@ version: "3.7"
 
 services:
   caddy:
-    image: gh
-    container_name: ghcr.io/wi4ad/caddy-compose
+    image: ghcr.io/wi4ad/caddy-l4
+    container_name: caddy
     restart: unless-stopped
     cap_add:
       - NET_ADMIN
