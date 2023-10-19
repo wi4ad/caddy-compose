@@ -26,4 +26,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: wi4ad/caddy-compose/caddy-l4:latest
+          tags: wi4ad/caddy-l4:latest
